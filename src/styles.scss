@@ -1,38 +1,57 @@
-	@import "./fonts/fonts.scss";
+@import "./fonts/fonts.scss";
 
-  h1 {
-    color: white;
-    font-family: moon;
-  }
+h1 {
+  color: white;
+  font-family: moon;
+}
 
-  h2 {
-    color: white;
-    font-family: roboto-thin;
-  }
+h2 {
+  color: white;
+  font-family: roboto-thin;
+}
 
-  body {
-  	font-family: roboto-regular;
-  }
+body {
+	font-family: roboto-regular;
+}
 
-  .toolbar {
-    height: 60px;
-    margin: -8px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    background-color: #007BBF;
-    color: white;
-    font-weight: 600;
-  }
+.toolbar {
+  height: 60px;
+  width: 100%;
+  transition: top 0.3s;
+  margin: -8px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: #007BBF;
+  color: white;
+  font-weight: 600;
+}
 
-  .toolbar img {
-    margin: 0 16px;
-  }
+.toolbar img {
+  margin: 0 16px;
+}
 
-  .spacer {
-    flex: 1;
-  }
+.spacer {
+  flex: 1;
+}
 
-  .content {
-    align-items: center;
-  }
+.content {
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  margin: 15px;
+  grid-template-columns: 200px auto;
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: #F5F5F5;
+}
+
+.grid-container > div {
+  background-color: #F5F5F5;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
