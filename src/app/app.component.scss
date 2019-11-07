@@ -1,0 +1,28 @@
+  .bg {
+    /* The image used */
+    background: blue;
+
+    /* Set up proportionate scaling */
+    height: 100vh;
+      
+    /* Set up positioning */
+    position: relative;
+  }
+
+  .left {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    max-width: 100%;
+    width: 350;
+    padding: 10px;
+  }
+
+  .right {
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    max-width: 100%;
+    width: 350;
+    padding: 10px;
+  }

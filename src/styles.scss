@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'moon';
+  src: url('./fonts/moon_light.otf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('./fonts/Roboto-Thin.ttf') format('truetype'),
+}
+
+  h1 {
+    color: white;
+    font-family: moon;
+  }
+
+  h2 {
+    color: white;
+    font-family: roboto;
+  }
