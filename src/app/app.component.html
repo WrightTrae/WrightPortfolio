@@ -1,34 +1,8 @@
-
-
-<div class="content" role="main">
-  <div class="bg">
-    <div class="left">
-      <h1>Hi, I'm Trae Wright.</h1>
-      <h2>This is where I store my<br>nerd stuff.</h2>
-    </div>
-
-    <div class="right" style="margin-top: -30px">
-      <img id="flat_me" src="https://lh3.googleusercontent.com/GkW5ItxrbVlpTZNCDoplslOtbYGFbxx3HPTex-i6qq0ACzQnFRubPAaWNrYvDGcMpQDyXRU=w170" width="200" height="200">
-      <p>Add a body here :P</p>ß
-    </div>
-  </div>
-
-  <div class="grid-container">
-    <img id="flat_me" src="https://lh3.googleusercontent.com/GkW5ItxrbVlpTZNCDoplslOtbYGFbxx3HPTex-i6qq0ACzQnFRubPAaWNrYvDGcMpQDyXRU=w170" width="200" height="200">
-    <div>
-      <body>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</body>
-    </div>
-
-  </div>
-</div>
-
-<!-- Toolbar -->
+  <!-- Toolbar -->
 <div id="toolbar" class="toolbar" role="banner">
   <img
     width="40"
-    src="https://lh4.googleusercontent.com/-uVZ_k7MTSDemhdG5x87FaUx2ZH5OqRjKO_rROv9qfidhYYdY0n2FkUVFmqizrDYlVNQeu0GSSJ9SV8jnozp3B_1dlJiDV8_anpm5h3rjSq41w7Z0N0=w773"
+    src="https://lh3.googleusercontent.com/GkW5ItxrbVlpTZNCDoplslOtbYGFbxx3HPTex-i6qq0ACzQnFRubPAaWNrYvDGcMpQDyXRU=w170"
   />
   <span style="font-family: roboto;">Wright Portolio</span>
     <div class="spacer"></div>
@@ -38,4 +12,112 @@
 </div>
 <!-- Toolbar End -->
 
+<div class="content" role="main">
+  <div class="bg">
+    <!-- <canvas #randomcanvas style="height: 100%; margin: -8px; width:100%;"></canvas> -->
+    <div class="left">
+      <h1>Hi, I'm Trae Wright.</h1>
+      <h2>This is where I store my<br>nerd stuff.</h2>
+    </div>
+
+    <div class="right" style="margin-top: -30px">
+      <img id="flat_me" src="https://lh3.googleusercontent.com/GkW5ItxrbVlpTZNCDoplslOtbYGFbxx3HPTex-i6qq0ACzQnFRubPAaWNrYvDGcMpQDyXRU=w170" width="200" height="200">
+    </div>
+    <div class="bottom-middle" [@isLoaded]="isLoaded ? 'loaded' : 'notLoaded'">
+      <svg #downArrowLeft [@leftArrow]="isLoaded ? 'loaded' : 'notLoaded'" height="25" width="25">
+        <line  x1="0" y1="0" x2="25" y2="0" style="stroke:rgb(255,255,255);stroke-width:2" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+
+      <svg #downArrowRight [@rightArrow]="isLoaded ? 'loaded' : 'notLoaded'" height="25" width="25">
+        <line x1="0" y1="0" x2="25" y2="0" style="stroke:rgb(255,255,255);stroke-width:2" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div>
+      <img id="smr_logo" src="https://smartmedreminder.com/wp-content/themes/chs/assets/img/logo/logo.png">
+      <img id="chs_logo" src="https://lh4.googleusercontent.com/MT0b2RT3GSZmNDN--yZNhbp0a9qYibP9R1UgX_vkVAE7XonOFB6fYfMcCzMO-yelfmKgxW1k-2UFpUt2cgeNuqV_YXMZ4BvlxZJlrdUuEG13HhpWRhU=w572">
+    </div>
+    <div class="grid-container-child-text">
+      <h3>Smart Med Reminder</h3>
+      <p>Current Job with CHS | present | https://smartmedreminder.com/</p>
+      <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div>
+      <img id="smr_logo" src="https://smartmedreminder.com/wp-content/themes/chs/assets/img/logo/logo.png">
+      <img id="chs_logo" src="https://lh4.googleusercontent.com/MT0b2RT3GSZmNDN--yZNhbp0a9qYibP9R1UgX_vkVAE7XonOFB6fYfMcCzMO-yelfmKgxW1k-2UFpUt2cgeNuqV_YXMZ4BvlxZJlrdUuEG13HhpWRhU=w572">
+    </div>
+    <div class="grid-container-child-text">
+      <h3>Smart Med Reminder</h3>
+      <p>Current Job with CHS | present | https://smartmedreminder.com/</p>
+      <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div>
+      <img id="smr_logo" src="https://smartmedreminder.com/wp-content/themes/chs/assets/img/logo/logo.png">
+      <img id="chs_logo" src="https://lh4.googleusercontent.com/MT0b2RT3GSZmNDN--yZNhbp0a9qYibP9R1UgX_vkVAE7XonOFB6fYfMcCzMO-yelfmKgxW1k-2UFpUt2cgeNuqV_YXMZ4BvlxZJlrdUuEG13HhpWRhU=w572">
+    </div>
+    <div class="grid-container-child-text">
+      <h3>Smart Med Reminder</h3>
+      <p>Current Job with CHS | present | https://smartmedreminder.com/</p>
+      <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div>
+      <img id="smr_logo" src="https://smartmedreminder.com/wp-content/themes/chs/assets/img/logo/logo.png">
+      <img id="chs_logo" src="https://lh4.googleusercontent.com/MT0b2RT3GSZmNDN--yZNhbp0a9qYibP9R1UgX_vkVAE7XonOFB6fYfMcCzMO-yelfmKgxW1k-2UFpUt2cgeNuqV_YXMZ4BvlxZJlrdUuEG13HhpWRhU=w572">
+    </div>
+    <div class="grid-container-child-text">
+      <h3>Smart Med Reminder</h3>
+      <p>Current Job with CHS | present | https://smartmedreminder.com/</p>
+      <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div>
+      <img id="smr_logo" src="https://smartmedreminder.com/wp-content/themes/chs/assets/img/logo/logo.png">
+      <img id="chs_logo" src="https://lh4.googleusercontent.com/MT0b2RT3GSZmNDN--yZNhbp0a9qYibP9R1UgX_vkVAE7XonOFB6fYfMcCzMO-yelfmKgxW1k-2UFpUt2cgeNuqV_YXMZ4BvlxZJlrdUuEG13HhpWRhU=w572">
+    </div>
+    <div class="grid-container-child-text">
+      <h3>Smart Med Reminder</h3>
+      <p>Current Job with CHS | present | https://smartmedreminder.com/</p>
+      <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div>
+      <img id="smr_logo" src="https://smartmedreminder.com/wp-content/themes/chs/assets/img/logo/logo.png">
+      <img id="chs_logo" src="https://lh4.googleusercontent.com/MT0b2RT3GSZmNDN--yZNhbp0a9qYibP9R1UgX_vkVAE7XonOFB6fYfMcCzMO-yelfmKgxW1k-2UFpUt2cgeNuqV_YXMZ4BvlxZJlrdUuEG13HhpWRhU=w572">
+    </div>
+    <div class="grid-container-child-text">
+      <h3>Smart Med Reminder</h3>
+      <p>Current Job with CHS | present | https://smartmedreminder.com/</p>
+      <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div>
+      <img id="smr_logo" src="https://smartmedreminder.com/wp-content/themes/chs/assets/img/logo/logo.png">
+      <img id="chs_logo" src="https://lh4.googleusercontent.com/MT0b2RT3GSZmNDN--yZNhbp0a9qYibP9R1UgX_vkVAE7XonOFB6fYfMcCzMO-yelfmKgxW1k-2UFpUt2cgeNuqV_YXMZ4BvlxZJlrdUuEG13HhpWRhU=w572">
+    </div>
+    <div class="grid-container-child-text">
+      <h3>Smart Med Reminder</h3>
+      <p>Current Job with CHS | present | https://smartmedreminder.com/</p>
+      <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+    </div>
+  </div>
+</div>
 <router-outlet></router-outlet>

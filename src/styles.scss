@@ -42,16 +42,17 @@ body {
 .grid-container {
   display: grid;
   margin: 15px;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 400px auto;
   grid-gap: 10px;
   padding: 10px;
+  border-radius: 10px;
   background-color: #F5F5F5;
 }
 
-.grid-container > div {
+.grid-container-child-text {
   background-color: #F5F5F5;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  text-align: left;
+  padding: 20px;
+  font-size: 16px;
 }
 
