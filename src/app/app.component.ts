@@ -30,28 +30,30 @@ animations:[
 	  	group([
 	    	query('@rightArrow', animateChild()),
 	    	query('@leftArrow', animateChild()),
-	    	animate('1000ms')
+	    	animate('500ms')
 	  	]),
 	  ]),
     ]),
     trigger('rightArrow', [
-      state('loaded', style({
+      state('down', style({
       	transform: 'translate(5px, 0px) rotate(-45deg) '
       })),
-      state('notLoaded', style({
+      state('up', style({
+      	transform: 'translate(-12px, 0px) rotate(45deg) '
       })),
-      transition('notLoaded => loaded', [
-        animate('500ms')
+      transition('* <=> *', [
+        animate('250ms')
       ]),
     ]),
     trigger('leftArrow', [
-      state('loaded', style({
+      state('down', style({
         transform: 'translate(-5px, 0px) rotate(45deg)'
       })),
-      state('notLoaded', style({
+      state('up', style({
+      	transform: 'translate(12px, 0px) rotate(-45deg) '
       })),
-      transition('notLoaded => loaded', [
-        animate('500ms')
+      transition('* <=> *', [
+        animate('250ms')
       ]),
     ])
   ]
@@ -61,6 +63,7 @@ animations:[
 export class AppComponent implements OnInit, AfterViewInit {
 	title = 'WrightPortfolio';
 	isLoaded;
+	arrowDirection;
 	// @ViewChild('randomcanvas', { static: true }) 
 	// randomcanvas: ElementRef<HTMLCanvasElement>;
 	// private ctx: CanvasRenderingContext2D;
@@ -70,20 +73,20 @@ export class AppComponent implements OnInit, AfterViewInit {
 		// this.canvas = document.getElementById("random-canvas")
 		window.onscroll = function() {
 			var currentScrollPos = window.pageYOffset;
-			if(currentScrollPos < 25){
-				document.getElementById("toolbar").style.top = "0";
+			if(currentScrollPos < 100){
+				this.arrowDirection = "down"; 
+			}else{
+				this.arrowDirection = "up";
 			}
-			else if (this.prevScrollpos > currentScrollPos) {
-				document.getElementById("toolbar").style.top = "0";
-			} else {
-				document.getElementById("toolbar").style.top = "-50px";
-			}
+			// if(currentScrollPos < 25){
+			document.getElementById("toolbar").style.top = "0";
 			this.prevScrollpos = currentScrollPos;
 		}.bind(this);
 	}
 
 	ngAfterViewInit(){
-  		setTimeout(()=>{ this.isLoaded = true; }, 250);
+  		setTimeout(()=>{ this.isLoaded = true;
+  		this.arrowDirection = "down" }, 250);
 		// var op = {x: 0, y: 0};
 		// var i = 0;
 		// var flip = false;
