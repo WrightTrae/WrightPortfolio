@@ -1,8 +1,11 @@
-  .bg {
-    background: #007BBF;
-    height: 100vh;
+  #landing {
+    background-color: #007BBF;
+    height: 100%;
+    width: 100%;
     margin: -8px;
     margin-bottom: 0px;
+    position: fixed;
+    z-index: -1;
   }
 
   .left {
@@ -10,7 +13,7 @@
     left: 20%;
     top: 30%;
     max-width: 100%;
-    width: 350;
+    width: 350px;
     padding: 10px;
   }
 
@@ -32,3 +35,14 @@
     width: 200;
     padding: 10px;
   }
+
+  #square{
+    position: fixed;
+    z-index: -1;
+    top: 0px; 
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+
