@@ -64,10 +64,6 @@ export class AppComponent implements OnInit, AfterViewInit {
 	title = 'WrightPortfolio';
 	isLoaded;
 	arrowDirection;
-	// @ViewChild('randomcanvas', { static: true }) 
-	// randomcanvas: ElementRef<HTMLCanvasElement>;
-	// private ctx: CanvasRenderingContext2D;
-
 
 	ngOnInit() {
 		// this.canvas = document.getElementById("random-canvas")
@@ -85,38 +81,10 @@ export class AppComponent implements OnInit, AfterViewInit {
 	}
 
 	ngAfterViewInit(){
-  		setTimeout(()=>{ this.isLoaded = true;
-  		this.arrowDirection = "down" }, 250);
-		// var op = {x: 0, y: 0};
-		// var i = 0;
-		// var flip = false;
-		// while(i<100){
-		// 	i++;
-		// 	flip = !flip;
-		// 	op = this.drawRandomLine(op, flip);
-		// }
+  		setTimeout(
+  		()=>{ 
+  			this.isLoaded = true;
+  			this.arrowDirection = "down" 
+  		}, 250);
 	}
-
-	// drawRandomLine(op, flip): number{
-
-	//   	this.ctx = this.randomcanvas.nativeElement.getContext('2d');
-	//   	this.ctx.beginPath();
-	//   	this.ctx.moveTo(op.x, op.y);
-	//   	if(flip){
-	//   		op.x += this.getRandomInt(this.getRandomInt(3)) * -1;
-	// 		op.y += this.getRandomInt(this.getRandomInt(3)) * -1;
-	//   	}else {
-	//   		op.x += this.getRandomInt(this.getRandomInt(10))
-	// 		op.y += this.getRandomInt(this.getRandomInt(10))
-	// 	}
-	//   	this.ctx.lineTo(op.x, op.y);
- //      	this.ctx.strokeStyle = '#ffffff';
-	//   	this.ctx.stroke();
-
-	//   	return op;
-	// }
-
-	// getRandomInt(max) {
- //  		return Math.floor(Math.random() * Math.floor(max));
-	// }
 }

@@ -5,11 +5,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ParallaxDirective } from './parallax.directive';
+import { TypewriterDirective } from './typewriter.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ParallaxDirective
+    ParallaxDirective,
+    TypewriterDirective
   ],
   imports: [
     BrowserModule,
