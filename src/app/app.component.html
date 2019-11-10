@@ -12,17 +12,18 @@
 </div>
 <!-- Toolbar End -->
 
-<div appParallax [ratio]="0" id="landing">
+
+<div appParallax [ratio]="0.3" id="landing">
   <!-- <canvas #randomcanvas style="height: 100%; margin: -8px; width:100%;"></canvas> -->
   <div class="left">
-    <h1 class="typewrite" appTypewriter href="" [period]="500" [rotatedWords]='[ "Hi I am Trae Wright.", "I am a software developer.", "I am a mobile developer.", "I am a designer.", "I am a tech enthusiasts."]'>Hi, I'm Trae Wright.</h1>
+    <h1 class="typewrite" appTypewriter href="" [period]="750" [rotatedWords]='[ "Hi I am Trae Wright.", "I am a software developer.", "I am a designer."]'>Hi, I'm Trae Wright.</h1>
     <h2>This is where I store my nerd stuff.</h2>
   </div>
 
   <div class="right" style="margin-top: -30px">
     <img id="flat_me" src="/assets/images/flatMe.png" width="200" height="200">
   </div>
-  <div appParallax [ratio]=".90" class="bottom-middle" [@isLoaded]="isLoaded ? 'loaded' : 'notLoaded'">
+  <div appParallax [ratio]=".6" class="bottom-middle" [@isLoaded]="isLoaded ? 'loaded' : 'notLoaded'">
     <svg #downArrowLeft [@leftArrow]="arrowDirection" height="25" width="25">
       <line  x1="0" y1="0" x2="25" y2="0" style="stroke:rgb(255,255,255);stroke-width:2" />
       Sorry, your browser does not support inline SVG.
@@ -33,6 +34,8 @@
       Sorry, your browser does not support inline SVG.
     </svg>
   </div>
+</div>
+<div id="slider">
 </div>
 
 <div class="content" role="main">

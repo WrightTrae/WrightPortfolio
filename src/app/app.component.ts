@@ -64,9 +64,14 @@ export class AppComponent implements OnInit, AfterViewInit {
 	title = 'WrightPortfolio';
 	isLoaded;
 	arrowDirection;
+	elemRef;
+
+	constructor(elemRef: ElementRef){
+		this.elemRef = elemRef;
+	}
 
 	ngOnInit() {
-		// this.canvas = document.getElementById("random-canvas")
+		this.elemRef.nativeElement.ownerDocument.body.style.backgroundColor = '#007BBF';
 		window.onscroll = function() {
 			var currentScrollPos = window.pageYOffset;
 			if(currentScrollPos < 100){
