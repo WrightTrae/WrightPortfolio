@@ -80,8 +80,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 				this.arrowDirection = "up";
 			}
 			// if(currentScrollPos < 25){
-			document.getElementById("toolbar").style.top = "0";
-			this.prevScrollpos = currentScrollPos;
+			// document.getElementById("toolbar").style.top = "0";
+			// this.prevScrollpos = currentScrollPos;
 		}.bind(this);
 	}
 
