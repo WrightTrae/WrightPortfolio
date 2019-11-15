@@ -8,6 +8,8 @@
   <div class="right" style="margin-top: -30px">
     <img id="flat_me" src="/assets/images/flatMe.png" width="200" height="200">
   </div>
+
+
   <div appParallax [ratio]=".6" class="bottom-middle" [@isLoaded]="isLoaded ? 'loaded' : 'notLoaded'">
     <svg #downArrowLeft [@leftArrow]="arrowDirection" height="25" width="25">
       <line  x1="0" y1="0" x2="25" y2="0" style="stroke:rgb(255,255,255);stroke-width:2" />
@@ -30,11 +32,54 @@
 <div appParallax [ratio]="1.14" class="panel" style="left: 75%"></div> -->
 
 <div class="content" role="main">
+  <a mat-raised-button routerLink=".">Contact Me</a>
 
-  <h1 class="underline">Projects</h1>
+  <h1>About Me</h1>
+
+  <div class="grid-container">
+    <div>
+      <h2>Personal Interests</h2>
+      <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+    </div>
+    <div>
+      <h2>Professional Skills</h2>
+      <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+    </div>
+  </div>
+
+  <hr/>
+
+  <h1>Experience</h1>
+
+  <div class="project-group">
+    <h2>Current Job: Full Stack Developer-  Concorance Health Solutions</h2>
+    <a href="https://www.smartmedreminder.com/" target="_blank">Website</a>
+
+    <div class="image-container">
+      <img src="https://lh3.googleusercontent.com/IxRG4-lM5hnUdLShPYXrK9DgNlEkC1KjvrRPNYKLiUJuUg_SLynWaucekv2x6Ux_7Fo=w2880-h1578-rw" alt="Login">
+      <img src="https://lh3.googleusercontent.com/b68z74WYuGo3GiRKx-dpHIi19jLEIpgveIyUtiZfAd0TCnnyG_71YX_Uw3S8ujn1aA=w2880-h1578-rw" alt="Dashboard">
+      <img src="https://lh3.googleusercontent.com/J4FYs2RJgDgHvg8w6O1XWfpIBXBuzNX3Qm5_nMHGZ2KwF1tJgK4FBijGzWHT2m4PcPaY=w2880-h1578-rw" alt="Details">
+      <!-- <img src="/assets/images/gng-photos.gif" alt="Photos"> -->
+    </div>
+
+    <div class="grid-container">
+      <div>
+        <h2>Tech Overview</h2>
+        <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+      </div>
+      <div>
+        <h2>Description</h2>
+        <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which will ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application works with a connected prescription cap that you receive from your pharmacist or health care provider to help you follow your doctor's instructions.</body>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
   <div class="project-group">
     <h2>Self-Published: Go/No Go</h2>
-    
+    <a href="https://play.google.com/store/apps/details?id=com.wright.android.t_minus" target="_blank">Google Play Store Link</a>
+
     <div class="image-container">
       <img src="/assets/images/gng-login.gif" alt="Login Animation">
       <img src="/assets/images/gng-manifest.gif" alt="Manifest">

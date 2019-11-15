@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ParallaxDirective } from './parallax.directive';
 import { TypewriterDirective } from './typewriter.directive';
+import { MatButtonModule } from '@angular/material/button';
+import { MatRippleModule} from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { TypewriterDirective } from './typewriter.directive';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
