@@ -15,6 +15,7 @@ import { TabLabelComponent } from './tabs/tab-item/tab-label.component';
 import { TabItemComponent } from './tabs/tab-item/tab-item.component';
 import { AboutComponent } from "./tabs/about.component";
 import { ProjectsComponent } from "./tabs/projects.component";
+import { ContactComponent } from './tabs/contact.component';
 
 
 
@@ -30,7 +31,8 @@ import { ProjectsComponent } from "./tabs/projects.component";
     TabBodyComponent,
     TabLabelComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
