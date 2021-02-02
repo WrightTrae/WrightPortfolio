@@ -51,9 +51,10 @@ body {
 }
 
 .toolbar {
-  height: 60px;
+  height: 50px;
   top: 0px;
   width: 100%;
+  padding: 8px;
   margin: -8px;
   position: fixed;
   display: flex;
@@ -61,6 +62,19 @@ body {
   background-color: #007BBF;
   color: white;
   font-weight: 600;
+  z-index: 4;
+}
+
+.footer {
+  height: 70px;
+  width: 100%;
+  position: relative;
+  margin-top: -20px;
+  bottom: 0px;
+  padding: 20px;
+  background-color: #007BBF;
+  color: white;
+  z-index: 2;
 }
 
 .toolbar img {
@@ -77,9 +91,11 @@ body {
   background-color: #383838;
   margin-left: -8px;
   margin-right: -8px;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-bottom: -8px;
+  padding-right: 8px;
   padding-top: 20px;
+  padding-bottom: 10px;
+  max-width: 100%;
   z-index: 1;
 }
 
@@ -112,6 +128,10 @@ body {
 .grid-container-child-text body {
   font-family: roboto-light;
   color: #000;
+}
+
+.centered {
+ margin-left: 400px;
 }
 
 html, body { height: 100%; }

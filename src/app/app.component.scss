@@ -4,6 +4,7 @@
   width: 100%;
   max-width: 100%;
   margin: -8px;
+  padding: 8px;
   position: fixed;
 }
 
@@ -95,6 +96,7 @@ hr {
 .grid-container div h2 {
   color: #ffffff;
   text-align: center;
+  overflow: auto;
   font-family: roboto-regular;
 }
 
