@@ -37,18 +37,10 @@ import { startWith, map, delay } from "rxjs/operators";
   styles: [
     `
         .tabs-header {
-          display: flex;
-        }
-        .active {
-          color: red;
-        }
-        .tab-label {
-          margin-top: 90px;
-          margin-bottom: 50px;
-          color: #007BBF;
-          font-size: 45px;
-          font-family: moon;
-          text-align: center;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 5%;
+          margin: 40px;
         }
       `,
   ],
@@ -64,7 +56,7 @@ export class TabComponent implements AfterContentInit, AfterContentChecked {
   activeTab: TabItemComponent;
 
   labelStyle = {
-    'padding': '50px',
+    'transition': 'font-size .25s',
     'font-family': 'moon',
     'text-align': 'center',
   }
