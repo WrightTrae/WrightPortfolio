@@ -4,53 +4,62 @@ import {
   QueryList,
   AfterContentInit,
   AfterContentChecked,
-  Input,
 } from "@angular/core";
-import { TabItemComponent } from "./tab-item/tab-item.component";
+import { TabItemComponent } from "../tab-item/tab-item.component";
 import { Observable } from "rxjs";
 import { startWith, map, delay } from "rxjs/operators";
 
 @Component({
-  selector: "tab-component",
+  selector: "project-tab-component",
   template: `
-  <div class="tabs-header">
-  <div
-    (click)="selectTab(item)"
-    [ngStyle]="getStyle(item)"
-    *ngFor="let item of tabItems$ | async"
-  >
-    <ng-container *ngIf="item.labelComponent">
-      <ng-container *ngTemplateOutlet="item.labelComponent.labelContent">
-      </ng-container>
-    </ng-container>
-    <ng-container *ngIf="!item.labelComponent">
-      {{ item.label }}
-    </ng-container>
-  </div>
-</div>
-<div class="tabs-body">
-<ng-container *ngIf="activeTab && activeTab.bodyComponent">
-  <ng-container *ngTemplateOutlet="activeTab.bodyComponent.bodyContent">
-  </ng-container>
-</ng-container>
-</div>
+  <div class="container">
+      <div class="tabs-header">
+        <div
+          (click)="selectTab(item)"
+          [ngStyle]="getStyle(item)"
+          *ngFor="let item of tabItems$ | async"
+        >
+          <ng-container *ngIf="item.labelComponent">
+            <ng-container *ngTemplateOutlet="item.labelComponent.labelContent">
+            </ng-container>
+          </ng-container>
+          <ng-container *ngIf="!item.labelComponent">
+            {{ item.label }}
+          </ng-container>
+        </div>
+      </div>
+      <div class="tabs-body">
+        <ng-container *ngIf="activeTab && activeTab.bodyComponent">
+          <ng-container *ngTemplateOutlet="activeTab.bodyComponent.bodyContent">
+          </ng-container>
+        </ng-container>
+      </div>
+      </div>
     `,
   styles: [
     `
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 5%;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+
         .tabs-header {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-gap: 5%;
-          margin: 40px;
+          grid-gap: 1%;
+          grid-template-rows: auto auto auto auto auto 1fr;
         }
 
         .tabs-body {
-          margin: 40px;
+
         }
       `,
   ],
 })
-export class TabComponent implements AfterContentInit, AfterContentChecked {
+export class ProjectTabComponent implements AfterContentInit, AfterContentChecked {
   @ContentChildren('tabItem')
 
   tabs: QueryList<TabItemComponent>;
@@ -62,18 +71,18 @@ export class TabComponent implements AfterContentInit, AfterContentChecked {
 
   labelStyle = {
     'transition': 'font-size .25s',
-    'font-family': 'moon',
-    'text-align': 'center',
+    'font-family': 'Roboto',
+    'text-align': 'left',
   }
 
   selectedStyle = {
-    'color': '#007BBF',
-    'font-size': '45px',
+    'color': 'white',
+    'font-size': '26px',
   }
 
   unSelectedStyle = {
-    'color': 'white',
-    'font-size': '35px',
+    'color': '#858585',
+    'font-size': '25px',
   }
 
   constructor() { }
