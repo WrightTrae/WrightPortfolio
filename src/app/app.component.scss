@@ -76,7 +76,7 @@ hr {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-gap: 10%;
   width: 85%;
   margin: 0 auto;
