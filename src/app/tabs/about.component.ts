@@ -9,27 +9,9 @@ import { TabItemComponent } from './tab-item/tab-item.component';
 </tab-label>
 <tab-body>
     <div class="grid-container">
+        <img src="/assets/images/port.jpg" alt="Photos">
         <div>
-            <h2>Personal Interests</h2>
-
-            <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which
-                will
-                ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application
-                works
-                with a connected prescription cap that you receive from your pharmacist or health care provider to help
-                you
-                follow your doctor's instructions.</body>
-        </div>
-        <div>
-            <h2>Professional Skills</h2>
-
-            <body>Taking your medication as prescribed is the best way to get the full benefits of your treatment, which
-                will
-                ultimately lead to better health and lower healthcare costs. The Smart Med Reminder™ mobile application
-                works
-                with a connected prescription cap that you receive from your pharmacist or health care provider to help
-                you
-                follow your doctor's instructions.</body>
+            <body> I like to say that I specialize in Mobile and Cloud development, but my day to day often changes based on the tasks at hand. Because of this I often fill the roles of a Web or Backend Developer. I can confidently say that I know several programming languages and that's barely scratching the surface, but for me that's the best part about what I do. I have worked on many different apps both IOS and Android. I have also extensively worked on several projects as a web and full stack developer. .</body>
         </div>
     </div>
 </tab-body>`

@@ -8,7 +8,6 @@ import { ParallaxDirective } from './directives/parallax.directive';
 import { TypewriterDirective } from './directives/typewriter.directive';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule} from '@angular/material/core';
-import { ContentComponent } from './content.component';
 import { TabComponent } from './tabs/tab.component';
 import { TabBodyComponent } from './tabs/tab-item/tab-body.component';
 import { TabLabelComponent } from './tabs/tab-item/tab-label.component';
@@ -28,7 +27,6 @@ import { ProjectSharedComponent } from './tabs/projects/project-shared.component
 @NgModule({
   declarations: [
     AppComponent,
-    ContentComponent,
     ParallaxDirective,
     TypewriterDirective,
     TabComponent,

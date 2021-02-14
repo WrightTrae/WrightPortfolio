@@ -1,9 +1,3 @@
-// .project-list {
-//   display: grid;
-//   grid-gap: 5%;
-//   margin: 40px;
-// }
-
 .project-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -15,7 +9,7 @@
 
 .description-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 35% 65%;
   grid-gap: 10%;
   width: 85%;
   margin: 0 auto;
@@ -50,8 +44,4 @@
   color: #fff;
   font-family: roboto-light;
   background-color: #26262600;
-}
-
-.link-text {
-    color: #2B8EFF;
 }

@@ -87,9 +87,9 @@ hr {
   padding: 25px;
   padding-top: 10px;
   padding-bottom: 40px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 10px #00000050;
-  background-color: #262626;
+  // border-radius: 10px;
+  // box-shadow: 3px 3px 10px #00000050;
+  // background-color: #262626;
 }
 
 .grid-container div h2 {
@@ -105,22 +105,6 @@ hr {
   background-color: #26262600
 }
 
-
-
-
-// .panel-grid-container {
-//   position: fixed;
-
-//   max-height: 150vh;
-//   width: 100%;
-//   display: flex;
-//   background-color: #2196F3;
-//   margin: -10px;
-// }
-
-// .panel {
-//   position: fixed;
-//   height: 150vh;
-//   width: 25%;
-//   background-color: #fff;
-// }
+.link-text {
+  color: #2b8eff;
+}

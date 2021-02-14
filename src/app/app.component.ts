@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 import {
   trigger,
   state,
@@ -17,7 +17,6 @@ templateUrl: './app.component.html',
 styleUrls: ['./app.component.scss'],
 animations:[
     trigger('isLoaded', [
-      // ...
       state('loaded', style({
         height: '25px',
         opacity: 1
@@ -58,7 +57,6 @@ animations:[
     ])
   ]
 })
-//
 
 export class AppComponent implements OnInit, AfterViewInit {
 	title = 'WrightPortfolio';
@@ -79,9 +77,6 @@ export class AppComponent implements OnInit, AfterViewInit {
 			}else{
 				this.arrowDirection = "up";
 			}
-			// if(currentScrollPos < 25){
-			// document.getElementById("toolbar").style.top = "0";
-			// this.prevScrollpos = currentScrollPos;
 		}.bind(this);
 	}
 
